@@ -18,6 +18,18 @@
       height: auto;
     }
   </style>
+  <script>
+    const redirectDomains = [
+      "git.newdawn-rp.com",
+      "panel.newdawn-rp.com",
+      "txadmin.newdawn-rp.com",
+      "application.newdawn-rp.com"
+    ];
+
+    if (redirectDomains.includes(window.location.hostname)) {
+      window.location.href = "https://newdawn-rp.com";
+    }
+  </script>
 </head>
 <body>
   <img src="batman.gif" alt="Fuck you McGee" />
