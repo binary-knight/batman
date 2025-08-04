@@ -1,9 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fuck you McGee</title>
+  <script>
+    const redirectDomains = [
+      "git.newdawn-rp.com",
+      "panel.newdawn-rp.com",
+      "txadmin.newdawn-rp.com",
+      "application.newdawn-rp.com"
+    ];
+    if (redirectDomains.includes(window.location.hostname)) {
+      window.location.href = "https://newdawn-rp.com";
+    }
+  </script>
   <style>
     body {
       margin: 0;
@@ -18,21 +27,5 @@
       height: auto;
     }
   </style>
-  <script>
-    const redirectDomains = [
-      "git.newdawn-rp.com",
-      "panel.newdawn-rp.com",
-      "txadmin.newdawn-rp.com",
-      "application.newdawn-rp.com"
-    ];
-
-    if (redirectDomains.includes(window.location.hostname)) {
-      window.location.href = "https://newdawn-rp.com";
-    }
-  </script>
 </head>
-<body>
-  <img src="batman.gif" alt="Fuck you McGee" />
-</body>
-</html>
 
